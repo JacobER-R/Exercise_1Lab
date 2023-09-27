@@ -7,7 +7,7 @@ format: html
 ```{r}
 getwd()
 ```
-
+[1] "/Users/jrudd/Documents/Exercises_Rlab"
 ```{r}
 library("haven")
 library("tidyverse")
@@ -17,6 +17,7 @@ summary(qog_ei_ts_sept21)
 my_data <- read_dta("~/Downloads/qog_ei_ts_sept21.dta")
 mean(my_data$wdi_fossil, na.rm = TRUE)
 ```
+[1] 65.53438
 #mean is 65.53438.
 #Regarding the average of wdi_fossil, 65.53438 indicates the average fossil fuel consumption as a percentage of total energy consumption across the set of units (country,year) analyzed in the data. I assume this would then mean that the average takes into account the percentage aggregated over time (although not necessarily change over time), as well as across countries. 
 
